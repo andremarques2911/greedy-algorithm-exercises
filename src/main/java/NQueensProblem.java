@@ -12,15 +12,6 @@ public class NQueensProblem {
     }
 
     public Hashtable execute() {
-//        if (nQueens < 2 || nQueens > boardSize) {
-//            System.out.print("The number of queens must be greater then 2.");
-//            return null;
-//        }
-//        for (int i = 0; i < boardSize; i++) {
-//            for (int j = 0; j < boardSize; j++) {
-//                board[i][j] = 0;
-//            }
-//        }
         if (!backtracking(0, boardSize)) {
             System.out.print("Not exists solution!");
             return null;
